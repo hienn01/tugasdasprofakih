@@ -1,0 +1,47 @@
+Horror = ['Insidious', 'The Conjuring', 'The Nun']
+Thriller = ['The Book of Eli', 'The Da Vinci Code', 'War of The Worlds']
+Action = ['The Raid', 'Mission Impossible', 'John Wick']
+Comedy = ['Mr Bean', 'Agak Laen', 'Toko Sebelah']
+
+print("Cinema Ternate")
+print("==============")
+print("1.Horror\t2.Anime\n3.Action\t4.Comedy")
+pil = int (input("Pilih genre film yang ingin ditonton: "))
+if pil == 1:
+    for i, v in enumerate(Horror, start=0):
+        print(i, v)
+    film = int(input("Pilih film yang diinginkan: "))
+    umur = int (input("Masukkan umur anda: "))
+    if umur<18:
+        print("Anda Tidak Bisa Menonton Film ini")
+    else:
+        print("Film\t: ", Horror[film],"\nHarga\t: Rp.45.000")
+elif pil == 2:
+    for i, v in enumerate(Thriller, start=0):
+        print(i, v)
+    film = int(input("Pilih film yang diinginkan: "))
+    umur = int (input("Masukkan umur anda: "))
+    if umur<18:
+        print("Anda Tidak Bisa Menonton Film ini")
+    else:
+        print("Film\t: ", Thriller[film],"\nHarga\t: Rp.45.000")
+elif pil == 3:
+    for i, v in enumerate(Action, start=0):
+        print(i, v)
+    film = int(input("Pilih film yang diinginkan: "))
+    umur = int (input("Masukkan umur anda: "))
+    if umur<15:
+        print("Anda Tidak Bisa Menonton Film ini")
+    else:
+        print("Film\t: ", Action[film],"\nHarga\t: Rp.50.000")
+elif pil == 4:
+    for i, v in enumerate(Comedy, start=0):
+        print(i, v)
+    film = int(input("Pilih film yang diinginkan: "))
+    umur = int (input("Masukkan umur anda: "))
+    if umur<15:
+        print("Anda Tidak Bisa Menonton Film ini")
+    else:
+        print("Film\t: ", Comedy[film],"\nHarga\t: Rp.35.000")
+else :
+    print(f"Program selesai")
